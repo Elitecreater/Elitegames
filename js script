@@ -9,7 +9,7 @@ function checkPassword() {
         loginScreen.style.display = "none";
         gameContent.style.display = "block";
     } else {
-        message.innerText = "change window location to https://radmanplays.github.io/Eaglercraft-1.21/";
+        message.innerText = "Access Denied. Try again!";
         message.style.color = "red";
     }
 }

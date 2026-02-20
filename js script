@@ -1,0 +1,15 @@
+function checkPassword() {
+    const password = document.getElementById("pass-input").value;
+    const correctPassword = "PlayerOne"; // Set your password here
+    const loginScreen = document.getElementById("login-screen");
+    const gameContent = document.getElementById("game-content");
+    const message = document.getElementById("message");
+
+    if (password === correctPassword) {
+        loginScreen.style.display = "none";
+        gameContent.style.display = "block";
+    } else {
+        message.innerText = "change window location to https://radmanplays.github.io/Eaglercraft-1.21/";
+        message.style.color = "red";
+    }
+}
